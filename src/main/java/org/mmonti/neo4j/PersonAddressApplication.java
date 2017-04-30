@@ -33,6 +33,7 @@ public class PersonAddressApplication {
 
 			Person person = personRepository.findOne(p.getId());
 			person.getAddresses().stream().forEach(System.out::println);
+			// I am getting a random order on the printed Addresses. Should I get a1, a2 then a3.
 		};
 	}
 }
